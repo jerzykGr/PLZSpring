@@ -3,13 +3,13 @@
  */
 package test;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 import org.junit.Test;
 
-import pl.plzspring.main.HelloSpring;
 import pl.plzspring.player.FootballPlayer;
-import pl.plzspring.player.Player;
 import pl.plzspring.statistic.Statistic;
 
 /**

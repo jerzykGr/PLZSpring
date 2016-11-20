@@ -10,6 +10,7 @@ import pl.plzspring.statistic.StatisticDTO;
  * @author Administrator
  *
  */
+
 public class SpeedwayPlayer implements Player {
 
 	private Statistic stat;
@@ -21,6 +22,18 @@ public class SpeedwayPlayer implements Player {
 	@Override
 	public StatisticDTO getStatisticForPlayer() {
 		return stat.getStatistic();
+	}
+
+	@Override
+	public void addPlayer() {
+		System.out.println("Add new speadway player");
+		
+	}
+
+	@Override
+	public void addPlayerStatistic() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

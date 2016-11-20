@@ -6,6 +6,7 @@ package pl.plzspring.main;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import pl.plzspring.common.configure.MainAppConfig;
 import pl.plzspring.player.Player;
 
 /**
@@ -18,10 +19,11 @@ public class MainApp {
 		AnnotationConfigApplicationContext context = getAppContext();
 
 		Player player = getBean(context, Player.class);
-
+		
 		System.out.println(player.getStatisticForPlayer().getType().getCode());
-
+		
 		context.close();
+		
 	}
 
 	private static AnnotationConfigApplicationContext getAppContext() {

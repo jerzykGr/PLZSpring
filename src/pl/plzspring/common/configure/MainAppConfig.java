@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pl.plzspring.main;
+package pl.plzspring.common.configure;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,6 +19,7 @@ import pl.plzspring.statistic.enums.StatisticType;
  */
 @Configuration
 public class MainAppConfig {
+	
 	@Bean
 	public Player player(){
 		return new FootballPlayer(statistic());

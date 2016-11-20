@@ -10,5 +10,10 @@ import pl.plzspring.statistic.StatisticDTO;
  *
  */
 public interface Player {
+	
+	public void addPlayer();
+	
+	public void addPlayerStatistic();
+	
 	public StatisticDTO getStatisticForPlayer();
 }

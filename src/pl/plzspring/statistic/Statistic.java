@@ -9,4 +9,5 @@ package pl.plzspring.statistic;
  */
 public interface Statistic {
 	public StatisticDTO getStatistic();
+	public void addStatistic();
 }

@@ -5,12 +5,16 @@ package pl.plzspring.statistic;
 
 import java.io.Serializable;
 
+import org.springframework.stereotype.Component;
+
 import pl.plzspring.statistic.enums.StatisticType;
 
 /**
  * @author Administrator
  *
  */
+
+@Component
 public class StatisticFilterVO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
